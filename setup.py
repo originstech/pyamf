@@ -68,7 +68,7 @@ def setup_package():
         zip_safe=False,
         extras_require=setupinfo.get_extras_require(),
         classifiers=(
-            filter(None, classifiers.strip().split('\n')) +
+            classifiers.strip().split('\n') +
             setupinfo.get_trove_classifiers()
         ),
         **setupinfo.extra_setup_args())
